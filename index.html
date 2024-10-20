@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ConnectHub - Social Networking</title>
+</head>
+<body>
+    <header>
+        <div class="logo">ConnectHub</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for friend, post, or video">
+        </div>
+        <div class="icons">
+            <a href="#">Home</a>
+            <a href="#">Timeline</a>
+            <a href="#">Notifications <span class="badge">3</span></a>
+        </div>
+        <div class="user-profile">
+            <img src="user.jpg" alt="User Profile">
+            <span>John Doe</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Feed</a></li>
+                    <li><a href="#">Chats</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">Bookmarks</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Courses</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Feed -->
+        <section class="feed">
+            <div class="post-box">
+                <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+                <div class="post-options">
+                    <button id="postButton">Post</button>
+                    <button class="photo-btn">Photo or Video</button>
+                    <button class="location-btn">Location</button>
+                    <button class="feeling-btn">Feeling</button>
+                </div>
+            </div>
+
+            <div id="postsContainer"></div>
+        </section>
+        <!-- Add this in the appropriate section of index.html -->
+        <section class="user-profile-section">
+            <h2>Your Profile</h2>
+            <div id="userProfile"></div>
+            <textarea id="bioInput" placeholder="Update your bio..."></textarea>
+            <button id="updateProfileButton">Update Profile</button>
+        </section>
+
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <div class="birthdays">
+                <p>Pola Foster and 3 others have a birthday today!</p>
+            </div>
+            <div class="online-friends">
+                <h3>Online Friends</h3>
+                <ul>
+                    <li>John Carter</li>
+                    <li>Jane Doe</li>
+                    <li>Michael Smith</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <div class="post-options">
+        <button class="like-btn">Like</button>
+        <button class="dislike-btn">Dislike</button>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
